@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet" />
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo"></div>
+    </header>
+    <div class="contenedor">
+        <main>
+            <div class="contenedor-izquierdo">
+                <div class="cuadro-texto">
+                    <textarea id="texto-entrada" class="area-texto texto-ext-gra text-nor" rows="8"
+                        placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="grupo-botones">
+                    <span class="vector texto-peq text-nor">Solo letras minúsculas y sin acentos</span>
+                    <div class="botones">
+                        <button class="boton boton-pri" id="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                        <button class="boton boton-sec" id="boton-desencriptar"
+                            onclick="botonDesencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedor-derecho">
+                <div class="texto-visible">
+                    <div class="muneco" id="muneco"></div>
+                    <h2 id="texto-visible-h2" class="texto-gra texto-neg"></h2>
+                    <p id="texto-visible-p" class="texto-med text-nor"></p>
+                    <button class="boton boton-ter" id="boton-copiar" onclick="botonCopiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./javascripts/script.js"></script>
+</body>
+
+</html>
